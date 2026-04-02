@@ -6,9 +6,9 @@ public class Main {
         //Português - Habilita a ferramente para entender a digitação do usuário.
         Scanner scanner = new Scanner(System.in);
         //Português - Cria a Pilha, definindo que a mesma vai possuír apenas 5 espaços no Array.
-        PilhaArray pilha = new PilhaArray(10);
+        PilhaArray pilha = new PilhaArray(3);
         //Português - Cria a Fila, definindo que a mesma vai possuir apenas 5 espaços mo Array.
-        FilaArray fila = new FilaArray(10);
+        FilaArray fila = new FilaArray(3);
 
         //Português - Criação de um "Loop", tudo dentro desse "Do" será executado, verificando no final a condição "While".
         int mainOption;
@@ -46,7 +46,9 @@ public class Main {
             System.out.println("2 - Remover Elemento");
             System.out.println("3 - Mostrar Elemento do Topo");
             System.out.println("4 - Mostrar Todos Elementos da Pilha");
-            System.out.println("5 - Retornar");
+            System.out.println("5 - Pilha Está Cheia?");
+            System.out.println("6 - Pilha Está Vazia?");
+            System.out.println("7 - Retornar");
             System.out.print("Escolha uma Operação: ");
             //Português - Pausa o programa, esperando o usuário escrever no Console.
             optionPilha = scanner.nextInt();
@@ -63,10 +65,22 @@ public class Main {
                     break;
                 case 4: pilha.display();
                     break;
-                case 5: System.out.println("Voltando ao Menu Principal");
+                case 5: if (pilha.isFull()) {
+                    System.out.println("Pilha Está Cheia!");
+                    break;
+                }
+                System.out.println("Pilha Não Está Cheia!");
+                    break;
+                case 6: if (pilha.isEmpty()) {
+                    System.out.println("Pilha Está Vazia!");
+                    break;
+                }
+                System.out.println("Pilha Não Está Vazia!");
+                    break;
+                case 7: System.out.println("Voltando ao Menu Principal");
             }
             //Português - Caso a operação não seja "5", vai repetir novamente o "Menu Pilha".
-        } while (optionPilha != 5);
+        } while (optionPilha != 7);
     }
 
     //Português - Método separado responsável pelo "Menu Fila"
@@ -78,7 +92,9 @@ public class Main {
             System.out.println("2 - Remover Elemento");
             System.out.println("3 - Mostrar Primeiro Elemento");
             System.out.println("4 - Mostrar Todos Elementos da Fila");
-            System.out.println("5 - Retornar");
+            System.out.println("5 - Fila Está Cheia?");
+            System.out.println("6 - Fila Está Vazia?");
+            System.out.println("7 - Retornar");
             System.out.print("Escolha uma Operação: ");
             //Português - Pausa o programa, esperando o usuário escrever no Console.
             optionFila = scanner.nextInt();
@@ -95,9 +111,21 @@ public class Main {
                     break;
                 case 4: fila.display();
                     break;
-                case 5: System.out.println("Voltando ao Menu Principal");
+                case 5: if (fila.isFull()) {
+                    System.out.println("Fila Está Cheia!");
+                    break;
+                }
+                System.out.println("Fila Não Está Cheia!");
+                    break;
+                case 6: if (fila.isEmpty()) {
+                    System.out.println("Fila Está Vazia!");
+                    break;
+                }
+                System.out.println("Fila Não Está Vazia!");
+                    break;
+                case 7: System.out.println("Voltando ao Menu Principal");
             }
             //Português - Caso a operação não seja "5", vai repetir novamente o "Menu Fila".
-        } while (optionFila != 5);
+        } while (optionFila != 7);
     }
 }
