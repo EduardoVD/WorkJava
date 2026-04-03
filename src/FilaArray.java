@@ -55,7 +55,10 @@ public class FilaArray {
             return;
         }
         System.out.println("Elemento " + array[start] + " Removido da Fila!");
-        start++;
+        for (int i = 0; i < end; i++) {
+            array[i] = array[i + 1];
+        }
+        end--;
     }
 
     //Português - Antes de olhar quem é o primeiro elemento na Fila, será olhado se a Fila já não está vazia.
