@@ -1,4 +1,5 @@
 Atividade Prática das Estruturas de Dados Pilha e Fila em Java
+
 Aluno: Eduardo Vedana Danielli
 
 Trabalho acadêmico desenvolvido para a Famper, com o objetivo de demonstrar de forma prática e simples o funcionamento das estruturas de dados Pilha e Fila em Java.
@@ -7,7 +8,7 @@ Pilha (Stack): É uma estrutura de dados linear que segue o princípio LIFO (Las
 
 Fila (Queue): É uma estrutura de dados linear que segue o princípio FIFO (First In, First Out - Primeiro a Entrar, Primeiro a Sair). Isso significa que o primeiro elemento que entrou na estrutura será o primeiro a ser removido.
 
-Link do YouTube: N/A
+Link do YouTube: https://youtu.be/_7Y8iygSHvE
 
 _**Warning: Large part of this translation was done by Google Translate!**_
 
@@ -21,4 +22,4 @@ _Stack: It is a linear data structure that follows the LIFO (Last In, First Out)
 
 _Queue: It is a linear data structure that follows the FIFO (First In, First Out) principle. This means that the first element that entered the structure will be the first to be removed._
 
-_YouTube Link: N/A_
+_YouTube Link: https://youtu.be/_7Y8iygSHvE_
